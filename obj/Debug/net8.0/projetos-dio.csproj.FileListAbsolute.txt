@@ -1,0 +1,15 @@
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\obj\Debug\net8.0\projetos-dio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\obj\Debug\net8.0\projetos-dio.AssemblyInfoInputs.cache
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\obj\Debug\net8.0\projetos-dio.AssemblyInfo.cs
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\obj\Debug\net8.0\projetos-dio.csproj.CoreCompileInputs.cache
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\obj\Debug\net8.0\projetos-dio.sourcelink.json
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\bin\Debug\net8.0\projetos-dio.exe
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\bin\Debug\net8.0\projetos-dio.deps.json
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\bin\Debug\net8.0\projetos-dio.runtimeconfig.json
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\bin\Debug\net8.0\projetos-dio.dll
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\bin\Debug\net8.0\projetos-dio.pdb
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\obj\Debug\net8.0\projetos-dio.dll
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\obj\Debug\net8.0\refint\projetos-dio.dll
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\obj\Debug\net8.0\projetos-dio.pdb
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\obj\Debug\net8.0\projetos-dio.genruntimeconfig.cache
+C:\Users\katia\OneDrive\Documentos\GitHub\projetos-dio\obj\Debug\net8.0\ref\projetos-dio.dll

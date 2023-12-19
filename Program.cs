@@ -1,53 +1,33 @@
-﻿using System;
-using System.Text.RegularExpressions;
+using System;
 
-class Program {
-    static void Main(string[] args){
+class Program
+{
+    static void Main()
+    {
+        // Solicita o nome do usuário, quilômetros percorridos por dia, 
+       // Horas de uso de eletrônicos por dia e o número de refeições com carne:
+       string nome = Console.ReadLine();
+       double quilometrosPorDia = double.Parse(Console.ReadLine());
+       int horasDeEletronicos = int.Parse(Console.ReadLine());
+       int refeicoesComCarne = int.Parse(Console.ReadLine());
 
-    // IMPLEMENTADO
-    string nome;
-    string email;
-    string senha;
-
-    // IMPLEMENTADO
-    /* Por segurança inseri uma validador de senha e email, para que ela atenda a algumas regras de qualidade, 
-    mais interessante ainda seria fazer a sanitização dos inputs também, mas não caberia neste projeto */
-    Console.WriteLine("Digite seu nome: ");
-    nome = Console.ReadLine();
-    
-    do{
-        Console.WriteLine("Digite um email válido: ");
-        email = Console.ReadLine();
+        // Chama o método para calcular a pegada de carbono
+        double pegadaDeCarbono = CalcularPegadaDeCarbono(quilometrosPorDia, horasDeEletronicos, refeicoesComCarne);
         
-        Regex emailValido = new Regex(@"^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$");
-        
-        if (emailValido.IsMatch(email)){
-            Console.WriteLine("Email validado!\n\n");
-            break;
-        }
-        else {
-            Console.WriteLine("Email inválido! \nEmail precisa atender aos requisitos: email@email.com\n\n");
-        }
-    } while(true);
-    
-    
-    do{
-    Console.WriteLine("Digite uma senha forte: ");
-    senha = Console.ReadLine();
-    
-    Regex senhaForte = new Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}$");
-    
-    if (senhaForte.IsMatch(senha)){
-        Console.WriteLine("Senha forte e registrada com sucesso!\n\n");
-        break;
+        // IMPLEMENTADO
+        Console.WriteLine($"{nome}, sua pegada de carbono e de {pegadaDeCarbono} toneladas de CO2 por ano.");
+
+        // Aguarda a entrada do usuário antes de encerrar o programa:
+        Console.ReadLine();
     }
-    else {
-        Console.WriteLine("Sua senha precisa ser forte, " + 
-        "ter: \n- ao menos 8 caracteres, \n- ao menos 1 letra minuscula, \n- ao menos 1 número, \n- ao menos 1 letra maiúscula, \n- ao menos um símbolo\n\n");
-    }
-    } while(true);
 
     // IMPLEMENTADO
-    Console.WriteLine($"{nome}, verifique o email: \n{email}");
-  }
+    static double CalcularPegadaDeCarbono(double quilometrosPorDia, int horasDeEletronicos, int refeicoesComCarne){
+        double quilometros = quilometrosPorDia * 365 * 0.2;
+        double horas = horasDeEletronicos * 0.1;
+        double refeicoes = refeicoesComCarne * 0.5;
+        double pegadaCarbono = quilometros + horas + refeicoes;
+        return pegadaCarbono;
+    }
+
 }
